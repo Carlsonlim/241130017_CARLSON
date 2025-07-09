@@ -16,21 +16,99 @@
     <header><h1>Tokopaedi</h1></header>
     <hr/>
     <main>
-      <section class = "produk-section"></section>
+      <section class = "produk-section">
         <div class = "card-produk">
-          <img src="./images/produk1.jpg" alt="Produk 1">
-          <div class = "data-produk">
-              <h3>Produk 1</h3>
-              <p>{data}</p>
-              <p>{data}</p>
+          <div class = "data-utama">
+            <img src="./images/produk1.jpg" alt="Produk 1">
+            <div class="data-produk">
+                <h3>Denmark Backpack</h3>
+                <p>One Size</p>
+                <p>Cream</p>
+            </div>
+          </div>
+          <div class = "quantity">
+            <button class = "minus">-</button>
+            <input type="number" value="1"/>
+            <button class="plus">+</button>
+          </div>
+          <p class="price">$20</p>
+        </div>
+        
+        <div class="card-produk">
+          <div class="data-utama">
+            <img src="./images/produk2.jpeg" alt="produk 2">
+            <div class="data-produk">
+              <h3>Casual Backpack</h3>
+              <p>One size</p>
+              <p>Black</p>
+            </div>
+          </div>
+          <div class="quantity">
+            <button class = "minus">-</button>
+            <input type="number" value="1"/>
+            <button class="plus">+</button>
+          </div>
+          <p class="price">$85</p>
           </div>
         </div>
-        <div class ></div>
+
+        <div class="card-produk">
+          <div class="data-utama">
+            <img src="./images/produk3.png" alt="produk 3">
+            <div class="data-produk">
+              <h3>Men Backpack</h3>
+              <p>One size</p>
+              <p>Grey</p>
+            </div>
+          </div>
+          <div class="quantity">
+            <button class = "minus">-</button>
+            <input type="number" value="1"/>
+            <button class="plus">+</button>
+          </div>
+          <p class="price">$150</p>
+          </div>
+        </div>
+
+        <div class="card-produk">
+          <div class="data-utama">
+            <img src="./images/produk4.jpg" alt="produk 4">
+            <div class="data-produk">
+              <h3>Women Backpack</h3>
+              <p>One size</p>
+              <p>Pink</p>
+            </div>
+          </div>
+          <div class="quantity">
+            <button class = "minus">-</button>
+            <input type="number" value="1"/>
+            <button class="plus">+</button>
+          </div>
+          <p class="price">$60</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="order-section">
+        <h2>order summary</h2>
+        <form>
+          <input type="text" id="nama" placeholder="Nama" required />
+          <input type="email" id="emai" placeholder="Email" required />
+          <input type="text" id="kodePromo" placeholder="KodePromo" />
+          <input type="reset" id="reset">reset</button>
+          <input type="submit" id="apply">Apply</button>
+        </form>
+        <div id="output">
+          <ol>
+            <div class="total-harga">
+              <p>Total Harga:</p>
+              <p id="totalhargaawal">$100</p>
+              <p id="totalhargaakhir">$60</p>
+            </div>
+          </ol>
+        </div>
+      </section>
     </main>
-
-
-
-
   </body>
   <script src="./script/jquery-3.7.1.min.js"></script>
   <script src="./script/script.js"></script>
